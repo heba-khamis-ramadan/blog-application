@@ -18,8 +18,12 @@ gem "stimulus-rails"
 gem "jbuilder"
 # PostgrSQL
 gem 'pg'
-# bcrypt
+# Bcrypt
 gem 'bcrypt'
+# JWT
+gem 'jwt'
+#dotenv
+gem 'dotenv-rails'
 
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"

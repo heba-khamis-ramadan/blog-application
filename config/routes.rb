@@ -15,4 +15,10 @@ Rails.application.routes.draw do
   post '/auth/signup', to: 'authentication#signup'
   post '/auth/login', to: 'authentication#login'
 
+
+  resources :posts do
+    resources :comments, only: [:index, :show, :create, :update, :destroy]
+  end
+
+
 end

@@ -3,7 +3,7 @@ class CreatePosts < ActiveRecord::Migration[8.0]
     create_table :posts do |t|
       t.string :title
       t.text :body
-      t.jsonb :tags, default: []
+      t.text :tags, array: true, default: []
       t.references :author, null: false, foreign_key: { to_table: :users }
 
       t.timestamps
